@@ -1,5 +1,4 @@
 # line-servers
-Preface:
 The line server is demonstrated in three languages. My reasoning for this is as follows: 
 
 My skills are strongest in Python. I understood that Flask would handle the job very well, and was able to put this server together in very little time. From this point, Ruby was not so far of a stretch. I only needed to find a suitable, simple framework, on par with Flask, to do essentially the same thing. Between these two servers, I had most of what I needed, but I felt that the more interesting questions would not be answered well by either of these two implementations, which are both very high level.
