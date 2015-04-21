@@ -1,5 +1,6 @@
 require 'sinatra'
 
+set :port, 8080
 lines = File.readlines('file.txt')
 file_length = lines.length
 get '/lines/:id' do

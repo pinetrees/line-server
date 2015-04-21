@@ -1,0 +1,14 @@
+http://bundler.io/
+http://www.sinatrarb.com/documentation.html
+http://www.andrewhavens.com/posts/20/beginners-guide-to-creating-a-rest-api/
+http://isotope11.com/blog/build-your-own-web-framework-with-rack-and-ruby-part-2
+https://github.com/rack/rack
+http://ruby-doc.org/core-2.2.0/Array.html
+http://rack.github.io/
+https://www.ruby-toolbox.com/categories/web_servers
+http://stackoverflow.com/questions/3732109/simple-http-server-in-java-using-only-java-se-api
+http://docs.oracle.com/javase/6/docs/jre/api/net/httpserver/spec/com/sun/net/httpserver/package-summary.html
+http://www.simpleframework.org/
+http://simple.sourceforge.net/maven.php
+http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
+http://www.rgagnon.com/javadetails/java-have-a-simple-http-server.html

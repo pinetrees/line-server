@@ -1,4 +1,5 @@
 from flask import Flask, render_template, Session
+import time
 app = Flask(__name__)
 app.debug = True
 
@@ -14,12 +15,16 @@ def lines(index=None):
         return 'Index out of range', 413
     else:
         line = lines[i]
-        return render_template('lines.html', line=line), 413
+        return line, 413
 
 if __name__ == '__main__':
+    start = time.time()
     f = open('file.txt', 'r')
     lines = []
     for line in f:
         lines.append(line)
+    #lines = f.read().split('\n')
+    end = time.time()
+    print "Execution took " + str(end - start) + " seconds"
     file_length = len(lines)
     app.run()
