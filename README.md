@@ -12,6 +12,7 @@ For files which can fit in memory, we have little to worry about. Storing the fi
 The active system is a database driven Ruby/Sinatra server which works with MySQL to index the lines of the file.
 
 #Quickstart
+The installation assumes you have bundler installed. You can install bundler on Ubuntu using apt-get.
 ./build.sh
 (you'll be prompted for your mysql credentials)
 
@@ -56,3 +57,7 @@ The system uses Flask as a Python server, Sinatra as a Ruby server, and Jersey a
 I initially spent half an hour to set up the Flask server, then another hour to set up the Sinatra server, then another two to set up the Jersey server, and another 1-2 hours to learn to read the file into Java. If I had more time, I would focus on implementing an appropriate data structure in Java to handle larger files, and then perhaps to handle the requests themselves. I would certainly start by implementing a binary tree to store the file, and subsequently exploring the possibility of a distributed hash table. I would have loved to know more about how to handle shuffling data between memory and disk space.
 
 The database driven system took an additional three hours to iron out.
+
+#Critique
+My code has a tendency to ramble. I have difficulty expressing my ideas until they are mostly fleshed out. Any code I write would benefit from several refactors. Mostly, this stems from my inexperience with writing code. I have too many files, and not enough structure. My implementation methods are odd, and nonstandard. For example, I would have benefitted from using a database.yml file.
+
