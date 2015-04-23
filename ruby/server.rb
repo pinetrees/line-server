@@ -8,7 +8,8 @@ load 'db.rb'
 class Line < ActiveRecord::Base
 end
 
-set :port, 8080
+set :bind, '127.0.0.1'
+set :port, 8089
 
 #We set the file to either the first argument, or a default file.txt
 file = ARGV[0] || 'file.txt'
