@@ -14,6 +14,7 @@ The active system is a database driven Ruby/Sinatra server which works with MySQ
 #Quickstart
 ./build.sh
 (you'll be prompted for your mysql credentials)
+
 ./run.sh
 
 Q&A
@@ -32,7 +33,9 @@ The advanced solution: It's a tradeoff. While the file is being loaded, the syst
 This is only important with respect to the frequency of requests. Without taking into account distributed systems, many users making pseudo-simultaneous requests is roughly equivalent to a single user making an equal number of consecutive requests. The question of performance requires some math, and is dependent on the size of the file. If we assume O(n) time for the lookup, and disregard other universal, roughly constant factors such as the actual request translation (not involving the lookup), then we should be able to calculate a rough estimation of the number of requests per second our system can handle:
 
 1 MHz = 10^6 cycles / second =>
+
 1 GHz = 1000 MHz = 1000 * 10^6 cycles / second = 10^9 cycles / second
+
 1 average dedicated server > 4 cores * 3 GHz > 10 GHz = 10^10 cycles / second
 
 For average sized lines, say 10 words, 50 characters, 50 bytes, a 1GB file would have about 20,000,000 lines. This would give us a worst case of about 10^10 / 20,000,000, or 500 lookups per second. This is only 5 lookups per second for a 100gb file.
